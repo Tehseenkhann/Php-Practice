@@ -11,7 +11,7 @@ require 'dbcon.php';
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Employee View</title>
+    <title>Product View</title>
 </head>
 <body>
 
@@ -21,7 +21,7 @@ require 'dbcon.php';
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Employee View Details 
+                        <h4>Product View Details 
                             <a href="index.php" class="btn btn-danger float-end">BACK</a>
                         </h4>
                     </div>
@@ -40,41 +40,42 @@ require 'dbcon.php';
                                 ?>
                                 
                                     <div class="mb-3">
-                                        <label>Employee Name</label>
+                                        <label>Product SKU</label>
                                         <p class="form-control">
-                                            <?=$employee['name'];?>
+                                            <?=$employee['sku'];?>
                                         </p>
                                     </div>
                                     <div class="mb-3">
-                                        <label>Employee Email</label>
+                                        <label>Category Name</label>
                                         <p class="form-control">
-                                            <?=$employee['email'];?>
+                                            <?=$employee['cname'];?>
                                         </p>
                                     </div>
                                     <div class="mb-3">
-                                        <label>Employee Phone</label>
+                                        <label>Product Name</label>
                                         <p class="form-control">
-                                            <?=$employee['phone'];?>
+                                            <?=$employee['pname'];?>
                                         </p>
                                     </div>
                                     <div class="mb-3">
-                                        <label>Employee Course</label>
+                                        <label>Price</label>
                                         <p class="form-control">
-                                            <?=$employee['designation'];?>
+                                            <?=$employee['price'];?>
                                         </p>
                                     </div>                                    
                                     <div class="mb-3">
-                                        <label>Employee Course</label>
+                                        <label>Quantity</label>
                                         <p class="form-control">
-                                            <?=$employee['salary'];?>
+                                            <?=$employee['quantity'];?>
                                         </p>
-                                    </div>                                    
+                                    </div>   
                                     <div class="mb-3">
-                                        <label>Employee Course</label>
+                                        <label>Image</label>
                                         <p class="form-control">
-                                            <?=$employee['address'];?>
+                                            <?=$employee['image'];?>
+                                            <img src="uploaded_img/<?php echo $employee['image']; ?>" height="100" alt="">
                                         </p>
-                                    </div>
+                                    </div>                                  
 
                                 <?php
                             }

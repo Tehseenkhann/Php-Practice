@@ -12,7 +12,7 @@ session_start();
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>Employee  Create</title>
+    <title>Create New Product Category</title>
 </head>
 <body>
   
@@ -24,39 +24,39 @@ session_start();
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Employee  Add 
+                        <h4>Add Product Category
                             <a href="index.php" class="btn btn-danger float-end">BACK</a>
                         </h4>
                     </div>
                     <div class="card-body">
                         <form action="code.php" method="POST">
+                            <div class="mb-3">
+                                <label>Product SKU</label>
+                                <input type="text" name="sku" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label>Category Name</label>
+                                <input type="text" name="cname" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label>Product Name</label>
+                                <input type="text" name="pname" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label>Price</label>
+                                <input type="text" name="price" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label>Quantity</label>
+                                <input type="text" name="quantity" class="form-control">
+                            </div> 
+                            <div class="mb-3">
+                                <label>Product Image</label>
+                                <input type="file" accept="image/png, image/jpeg, image/jpg" name="image" class="box">
+                            </div>
 
                             <div class="mb-3">
-                                <label>Employee  Name</label>
-                                <input type="text" name="name" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label>Employee  Email</label>
-                                <input type="email" name="email" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label>Employee Phone</label>
-                                <input type="text" name="phone" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <label>Job Designation</label>
-                                <input type="text" name="designation" class="form-control">
-                            </div>                            
-                            <div class="mb-3">
-                                <label>Employee Salary</label>
-                                <input type="text" name="salary" class="form-control">
-                            </div>                            
-                            <div class="mb-3">
-                                <label>Address</label>
-                                <input type="text" name="address" class="form-control">
-                            </div>
-                            <div class="mb-3">
-                                <button type="submit" name="save_employee" class="btn btn-primary">Save Employee </button>
+                                <button type="submit" name="save_employee" class="btn btn-primary">Save Product Category </button>
                             </div>
 
                         </form>
